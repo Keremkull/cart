@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Smart App</h1>
+    <nav class="navbar">   
+        <div class="search-container">
+            <h1><a href="index.html">Smart Notes</a></h1>
+
+            <div class="search-box">
+                <input type="text" id="search-input" class="search-input" placeholder="Search...">
+                <button type="button" id="search-button" onclick="searchNotes()">Search</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        
+        <form id="note-form">
+            <h1>Add Notes</h1>
+            <input type="text" id="add-title" placeholder="Title">
+            <textarea name="text" id="add-notes" placeholder="Notes" cols="30" rows="5"></textarea>
+            <button type="button" class="add-btn" onclick="addNote()">Add Note</button>
+        </form>
+
+        <div id="notes-container" class="notes-container">
+            <h1>Your Notes</h1>
+            <button class="delete-all" onclick="deleteAll()">Delete All</button>     
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

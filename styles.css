@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: beige;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding-top: 0px;
+    color: white;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between; /* Adjusted to space between items */
+    align-items: center; /* Center vertically */
+    padding: 10px; /* Adjust as needed */
+}
+
+.search-box {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+#search-input {
+    padding: 8px;
+    width: 200px; /* Adjust the width as needed */
+    margin-right:10px;
+}
+
+#search-button {
+    padding: 8px; /* Match padding with input */
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top:-10px;
+}
+
+#search-button:hover {
+    background-color: #45a049;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 100px;
+}
+
+form {
+    width: 300px;
+    margin-right: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.notes-container {
+    flex: 1;
+    
+    
+}
+
+.note-header {
+    border-bottom: 2px solid black; /* Change the color as needed */
+    padding: 5px; /* Adjust as needed for spacing */
+    margin: 10px; /* Adjust as needed for spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.title-notes{
+    padding:5px;
+    margin:10px;
+  
+}
+
+.note-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.edit-button,
+.delete-button {
+    background-color: transparent; /* Set a transparent background initially */
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 8px; /* Adjust as needed */
+    margin:10px;
+}
+.edit-button {
+    background-color: yellow; /* Change color on hover */
+}
+
+.edit-button:hover {
+    background-color: yellow; /* Change color on hover */
+}
+.delete-button {
+    background-color: red; /* Change color on hover */
+}
+
+.delete-button:hover {
+    background-color: red; /* Change color on hover */
+}
+h1 {
+    display: inline-block; /* Set to inline-block */
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.delete-all {
+    display: inline-block; /* Set to inline-block */
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    
+    
+}
+
+.delete-all:hover {
+    background-color: #cc0000;
+}
+a{
+    text-decoration: none;
+    color:white;
+    
+}
+.add-btn {
+    display: block; /* Make the button a block-level element */
+    margin: 0 auto; /* Center the button horizontally */
+}
